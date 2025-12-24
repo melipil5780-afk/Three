@@ -3,77 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiential Psychodynamic Therapy | Depth-Oriented Psychotherapy in Private Practice</title>
-    <meta name="description" content="Private practice offering experiential psychodynamic psychotherapy focused on deep emotional insight, relational patterns, and lasting personal growth. Informed by Jonathan Shedler's empirically supported approach.">
-    <meta name="keywords" content="psychodynamic therapy, experiential psychotherapy, depth psychology, Jonathan Shedler, emotional insight, private practice therapy">
+    <title>Experiential Psychodynamic Therapy | Depth-Oriented Private Practice</title>
+    <meta name="description" content="A welcoming private practice offering experiential psychodynamic psychotherapy, focused on deep emotional insight, relational patterns, and authentic personal growth in a supportive environment.">
+    <meta name="keywords" content="psychodynamic therapy, experiential psychotherapy, depth psychology, emotional insight, self-awareness, private practice">
     <meta name="robots" content="index, follow">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary: #001F3F;      /* Deep navy blue – trust, depth, introspection */
-            --accent: #3E5A7A;       /* Softer blue for subtle emphasis */
-            --text: #2E2E2E;
-            --light-bg: #F8FAFC;
+            --primary: #001F3F;          /* Deep navy for trust and depth */
+            --accent-blue: #3E6A8A;      /* Mid-blue for highlights */
+            --soft-green: #A8C4BC;       /* Calming green accent for growth/hope */
+            --light-bg: #F5F9FC;         /* Very light blue-tinted background */
             --white: #FFFFFF;
+            --text: #333333;
             --gray: #94A3B8;
             --border: #E2E8F0;
         }
 
         body {
             margin: 0;
-            font-family: 'Merriweather', Georgia, serif;
+            font-family: 'Open Sans', sans-serif;
             line-height: 1.8;
             color: var(--text);
             background-color: var(--light-bg);
             font-size: 1.1rem;
+            background-image: linear-gradient(to bottom, #F5F9FC, #E8F2F7); /* Subtle calming gradient */
+        }
+
+        h1, h2 {
+            font-family: 'Merriweather', serif;
+            font-weight: 400;
+            color: var(--primary);
         }
 
         header {
-            background-color: var(--primary);
+            background-image: linear-gradient(to bottom, rgba(0,31,63,0.8), rgba(0,31,63,0.6)), url('https://png.pngtree.com/thumb_back/fh260/background/20250524/pngtree-gentle-flowing-light-blue-wave-abstract-background-with-calm-peaceful-soft-image_17335870.jpg');
+            background-size: cover;
+            background-position: center;
             color: var(--white);
-            padding: 6rem 2rem 5rem;
+            padding: 9rem 2rem 7rem;
             text-align: center;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            font-weight: 400;
-            letter-spacing: 0.5px;
+            font-size: 3.2rem;
+            margin: 0 0 1.2rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header p {
-            max-width: 800px;
-            margin: 2rem auto 0;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
             opacity: 0.95;
             font-style: italic;
         }
 
         main {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
         }
 
         section {
-            margin-bottom: 5rem;
-            padding-bottom: 3rem;
-            border-bottom: 1px solid var(--border);
+            margin-bottom: 6rem;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 3rem;
+            align-items: center;
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 31, 63, 0.08);
+            transition: transform 0.3s ease;
         }
 
-        section:last-of-type {
-            border-bottom: none;
-            padding-bottom: 0;
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section img.icon {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: brightness(0.9) sepia(0.1) hue-rotate(180deg) saturate(1.2); /* Subtle blue tint */
         }
 
         h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            font-weight: 400;
-            margin-bottom: 1.5rem;
+            font-size: 2.4rem;
+            margin-bottom: 1.2rem;
             position: relative;
-            padding-bottom: 0.8rem;
+            padding-bottom: 1rem;
         }
 
         h2::after {
@@ -81,176 +105,183 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 60px;
-            height: 3px;
-            background-color: var(--accent);
-        }
-
-        p {
-            margin-bottom: 1.5rem;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(to right, var(--accent-blue), var(--soft-green));
+            border-radius: 3px;
         }
 
         ul {
-            padding-left: 1.8rem;
-            margin-bottom: 2rem;
+            list-style: none;
+            padding-left: 0;
         }
 
-        li {
-            margin-bottom: 1rem;
+        ul li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.4rem;
+            font-size: 1.15rem;
+        }
+
+        ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--soft-green);
+            font-weight: bold;
+            font-size: 1.4rem;
         }
 
         .contact {
-            background-color: var(--white);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            margin-top: 2rem;
+            background: linear-gradient(to bottom, var(--white), #F0F7FA);
+            padding: 4rem;
+            border-radius: 24px;
+            box-shadow: 0 12px 40px rgba(0, 31, 63, 0.1);
+            text-align: center;
         }
 
-        .contact h2::after {
-            display: none;
+        .contact h2 {
+            font-size: 2.6rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .contact p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
         }
 
         form {
             display: grid;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        label {
-            font-weight: 600;
-            color: var(--primary);
+            gap: 1.8rem;
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         input, textarea {
-            width: 100%;
-            padding: 1rem;
+            padding: 1.4rem;
             border: 1px solid var(--border);
-            border-radius: 8px;
+            border-radius: 16px;
             font-family: inherit;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-            box-sizing: border-box;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            background-color: #FAFDFF;
         }
 
         input:focus, textarea:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 5px rgba(62, 106, 138, 0.15);
             outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(62, 90, 122, 0.15);
         }
 
         button {
-            background-color: var(--primary);
+            background: linear-gradient(to right, var(--primary), var(--accent-blue));
             color: var(--white);
-            padding: 1rem 2rem;
+            padding: 1.4rem 3rem;
             border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
+            border-radius: 16px;
+            font-size: 1.3rem;
             font-weight: 600;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-            justify-self: start;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 31, 63, 0.2);
         }
 
         button:hover {
-            background-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(0, 31, 63, 0.3);
         }
 
         footer {
             background-color: var(--primary);
             color: var(--white);
             text-align: center;
-            padding: 3rem 2rem;
-            margin-top: 4rem;
-            font-size: 0.95rem;
-        }
-
-        footer p {
-            margin: 0.8rem 0;
-            opacity: 0.9;
+            padding: 4rem 2rem;
+            margin-top: 8rem;
         }
 
         @media (max-width: 768px) {
             header {
-                padding: 4rem 1.5rem 3rem;
+                padding: 7rem 1.5rem 5rem;
             }
             header h1 {
-                font-size: 2.3rem;
+                font-size: 2.6rem;
             }
             header p {
-                font-size: 1.15rem;
+                font-size: 1.3rem;
             }
-            main {
-                padding: 3rem 1.5rem;
+            section {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 2.5rem;
+            }
+            section img.icon {
+                margin: 0 auto 1.5rem;
             }
             .contact {
-                padding: 2rem;
+                padding: 3rem 2rem;
             }
         }
     </style>
-
-    <!-- Optional: Load Merriweather from Google Fonts for better web-safe fallback -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <h1>Experiential Psychodynamic Psychotherapy</h1>
-        <p>A private practice focused on deep emotional understanding, relational insight, and meaningful personal change.</p>
+        <p>A serene, supportive space for profound emotional exploration, authentic insight, and lasting personal transformation.</p>
     </header>
 
     <main>
         <section id="about">
-            <h2>About This Practice</h2>
-            <p>This private practice offers experiential psychodynamic psychotherapy—an approach that emphasizes lived emotional experience, unconscious patterns, and the therapeutic relationship as a pathway to lasting growth.</p>
-            <p>The focus is not on quick fixes or surface-level techniques, but on developing deeper self-understanding and the capacity for more authentic relating.</p>
+            <img src="https://thumbs.dreamstime.com/b/mental-health-emotional-wellbeing-icon-set-thin-line-editable-stroke-icons-psychology-therapy-depression-anxiety-418542411.jpg" alt="Icon representing mental health and self-awareness" class="icon">
+            <div>
+                <h2>About This Practice</h2>
+                <p>This private practice offers a compassionate, depth-oriented approach to psychotherapy. Inspired by experiential psychodynamic principles, the work centers on exploring your unique emotional world and relational patterns in a safe, non-judgmental environment.</p>
+                <p>The goal is to foster genuine self-understanding, emotional vitality, and more fulfilling connections.</p>
+            </div>
         </section>
 
         <section id="process">
-            <h2>What to Expect in Therapy</h2>
-            <p>Sessions provide a safe, confidential space to explore your inner world. Together we will:</p>
-            <ul>
-                <li>Pay close attention to feelings as they emerge in the present moment</li>
-                <li>Explore recurring patterns in relationships, both past and current</li>
-                <li>Identify how early experiences may quietly shape present emotions and behaviors</li>
-                <li>Work collaboratively to uncover underlying emotional meanings</li>
-                <li>Support the gradual emergence of greater self-awareness and emotional freedom</li>
-            </ul>
-            <p>Meaningful change unfolds naturally through insight and new ways of experiencing oneself and others.</p>
+            <img src="https://previews.123rf.com/images/millerinna/millerinna2203/millerinna220300003/183064949-mindfulness-and-meditation-concept-vector-outline-icons-set-collection-of-elements-for-self.jpg" alt="Icon representing mindfulness and emotional growth" class="icon">
+            <div>
+                <h2>What to Expect</h2>
+                <p>In sessions, you are invited to:</p>
+                <ul>
+                    <li>Engage with feelings and experiences as they unfold in the moment</li>
+                    <li>Illuminate patterns in relationships, past and present</li>
+                    <li>Discover how early life shapes current emotional realities</li>
+                    <li>Build deeper awareness and new relational possibilities</li>
+                    <li>Experience organic, enduring shifts in well-being</li>
+                </ul>
+                <p>Transformation arises through insight, lived experience, and the therapeutic relationship.</p>
+            </div>
         </section>
 
         <section id="approach">
-            <h2>The Therapeutic Approach</h2>
-            <p>This practice is grounded in contemporary psychodynamic principles, including the empirically supported framework described by Jonathan Shedler. The therapeutic relationship itself becomes a vital space for understanding and growth.</p>
-            <p>Sessions are typically 50 minutes long and held weekly (or more frequently when helpful).</p>
+            <img src="https://c8.alamy.com/comp/2T937AM/empathy-icon-hand-and-human-with-heart-flat-line-icon-style-simple-vector-design-editable-2T937AM.jpg" alt="Icon representing empathy and connection" class="icon">
+            <div>
+                <h2>The Approach</h2>
+                <p>Rooted in contemporary psychodynamic therapy—including Jonathan Shedler's evidence-based framework—this practice views the therapeutic relationship as a key catalyst for understanding and change.</p>
+                <p>Sessions are 50 minutes, usually weekly or as beneficial.</p>
+            </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Please feel free to reach out with questions or to discuss whether this practice might be a good fit.</p>
-            <p>Email: <a href="mailto:your.email@example.com" style="color: var(--primary); text-decoration: none;">your.email@example.com</a><br>
-               Phone: (123) 456-7890</p>
-
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="7" required></textarea>
-
-                <button type="submit">Send Message</button>
+            <h2>Begin Your Journey Today</h2>
+            <p>Take a gentle first step toward deeper self-understanding and growth. Submit an inquiry below—responses are prompt and completely confidential.</p>
+            
+            <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your secure form handler -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="8" placeholder="What brings you here? (Feel free to share as much or as little as you'd like)" required></textarea>
+                <button type="submit">Send Confidential Message</button>
             </form>
         </section>
     </main>
 
     <footer>
         <p>© 2025 Private Practice. All rights reserved.</p>
-        <p>All communications are confidential and protected.</p>
+        <p>All communications are strictly confidential and protected.</p>
     </footer>
 
 </body>
