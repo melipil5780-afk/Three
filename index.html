@@ -1,118 +1,155 @@
-<!DOCTYPEml>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiential Psychodynamic Therapy | Private Practice</title>
-    <meta name="description" content="A private practice offering experiential psychodynamic psychotherapy focused on deep emotional understanding, insight, and lasting change.">
+    <title>Experiential Psychodynamic Therapy | Depth-Oriented Psychotherapy in Private Practice</title>
+    <meta name="description" content="Private practice offering experiential psychodynamic psychotherapy focused on deep emotional insight, relational patterns, and lasting personal growth. Informed by Jonathan Shedler's empirically supported approach.">
+    <meta name="keywords" content="psychodynamic therapy, experiential psychotherapy, depth psychology, Jonathan Shedler, emotional insight, private practice therapy">
+    <meta name="robots" content="index, follow">
+    
     <style>
         :root {
-            --primary: #001F3F;    /* Deep navy blue - trust, depth, calm */
-            --accent: #4A6A8A;     /* Slightly lighter blue for subtle highlights */
-            --text: #333333;
-            --light-bg: #F5F7FA;
+            --primary: #001F3F;      /* Deep navy blue – trust, depth, introspection */
+            --accent: #3E5A7A;       /* Softer blue for subtle emphasis */
+            --text: #2E2E2E;
+            --light-bg: #F8FAFC;
             --white: #FFFFFF;
-            --gray: #A9A9A9;
+            --gray: #94A3B8;
+            --border: #E2E8F0;
         }
 
         body {
             margin: 0;
-            font-family: 'Georgia', serif;
-            line-height: 1.7;
+            font-family: 'Merriweather', Georgia, serif;
+            line-height: 1.8;
             color: var(--text);
             background-color: var(--light-bg);
+            font-size: 1.1rem;
         }
 
         header {
             background-color: var(--primary);
             color: var(--white);
-            padding: 4rem 2rem;
+            padding: 6rem 2rem 5rem;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            font-weight: normal;
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
         }
 
         header p {
-            max-width: 700px;
-            margin: 1.5rem auto 0;
-            font-size: 1.2rem;
-            opacity: 0.9;
+            max-width: 800px;
+            margin: 2rem auto 0;
+            font-size: 1.3rem;
+            opacity: 0.95;
+            font-style: italic;
         }
 
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem;
         }
 
         section {
-            margin-bottom: 4rem;
+            margin-bottom: 5rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
         }
 
         h2 {
             color: var(--primary);
-            font-size: 1.8rem;
-            border-bottom: 1px solid var(--gray);
-            padding-bottom: 0.5rem;
+            font-size: 2rem;
+            font-weight: 400;
             margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
         }
 
         p {
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
         }
 
         ul {
-            padding-left: 1.5rem;
-            margin-bottom: 1.5rem;
+            padding-left: 1.8rem;
+            margin-bottom: 2rem;
         }
 
         li {
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
         }
 
         .contact {
             background-color: var(--white);
-            padding: 2rem;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-top: 2rem;
         }
 
-        .contact h2 {
-            border-bottom: none;
+        .contact h2::after {
+            display: none;
         }
 
         form {
             display: grid;
-            gap: 1rem;
-            margin-top: 1.5rem;
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
 
         label {
-            font-weight: bold;
+            font-weight: 600;
+            color: var(--primary);
         }
 
         input, textarea {
             width: 100%;
-            padding: 0.8rem;
-            border: 1px solid var(--gray);
-            border-radius: 4px;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
             font-family: inherit;
             font-size: 1rem;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(62, 90, 122, 0.15);
         }
 
         button {
             background-color: var(--primary);
             color: var(--white);
-            padding: 0.8rem 1.5rem;
+            padding: 1rem 2rem;
             border: none;
-            border-radius: 4px;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+            justify-self: start;
         }
 
         button:hover {
@@ -123,61 +160,80 @@
             background-color: var(--primary);
             color: var(--white);
             text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            margin: 0.8rem 0;
+            opacity: 0.9;
         }
 
         @media (max-width: 768px) {
+            header {
+                padding: 4rem 1.5rem 3rem;
+            }
             header h1 {
-                font-size: 2rem;
+                font-size: 2.3rem;
+            }
+            header p {
+                font-size: 1.15rem;
             }
             main {
-                padding: 2rem 1rem;
+                padding: 3rem 1.5rem;
+            }
+            .contact {
+                padding: 2rem;
             }
         }
     </style>
+
+    <!-- Optional: Load Merriweather from Google Fonts for better web-safe fallback -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <h1>Experiential Psychodynamic Psychotherapy</h1>
-        <p>A private practice dedicated to deep emotional exploration, insight, and meaningful change.</p>
+        <p>A private practice focused on deep emotional understanding, relational insight, and meaningful personal change.</p>
     </header>
 
     <main>
         <section id="about">
             <h2>About This Practice</h2>
-            <p>This practice offers experiential psychodynamic psychotherapy, a depth-oriented approach that emphasizes the exploration of unconscious patterns, emotional experience, and relational dynamics.</p>
-            <p>Rather than focusing on quick symptom reduction alone, the work here centers on understanding the underlying emotional meanings and interpersonal patterns that shape how we feel, think, and relate to others.</p>
-            <p>The therapeutic process is collaborative, respectful, and attuned to your unique experience.</p>
+            <p>This private practice offers experiential psychodynamic psychotherapy—an approach that emphasizes lived emotional experience, unconscious patterns, and the therapeutic relationship as a pathway to lasting growth.</p>
+            <p>The focus is not on quick fixes or surface-level techniques, but on developing deeper self-understanding and the capacity for more authentic relating.</p>
         </section>
 
         <section id="process">
-            <h2>What to Expect</h2>
-            <p>In sessions, we will:</p>
+            <h2>What to Expect in Therapy</h2>
+            <p>Sessions provide a safe, confidential space to explore your inner world. Together we will:</p>
             <ul>
-                <li>Explore your feelings and thoughts as they arise in the moment</li>
-                <li>Attend to patterns in your relationships, past and present</li>
-                <li>Examine how earlier life experiences may continue to influence current emotional life</li>
-                <li>Work together to recognize and understand recurring emotional themes</li>
-                <li>Foster greater self-awareness, emotional freedom, and capacity for meaningful connection</li>
+                <li>Pay close attention to feelings as they emerge in the present moment</li>
+                <li>Explore recurring patterns in relationships, both past and current</li>
+                <li>Identify how early experiences may quietly shape present emotions and behaviors</li>
+                <li>Work collaboratively to uncover underlying emotional meanings</li>
+                <li>Support the gradual emergence of greater self-awareness and emotional freedom</li>
             </ul>
-            <p>Change emerges gradually through deepened understanding and new ways of experiencing oneself and others.</p>
+            <p>Meaningful change unfolds naturally through insight and new ways of experiencing oneself and others.</p>
         </section>
 
         <section id="approach">
-            <h2>The Approach</h2>
-            <p>This practice draws heavily from contemporary psychodynamic understanding, including the empirically supported framework outlined by Jonathan Shedler. The focus is on the therapeutic relationship as a vehicle for insight and growth, emphasizing emotional experience over technique alone.</p>
-            <p>Sessions are typically 50 minutes, held weekly or more frequently as needed.</p>
+            <h2>The Therapeutic Approach</h2>
+            <p>This practice is grounded in contemporary psychodynamic principles, including the empirically supported framework described by Jonathan Shedler. The therapeutic relationship itself becomes a vital space for understanding and growth.</p>
+            <p>Sessions are typically 50 minutes long and held weekly (or more frequently when helpful).</p>
         </section>
 
         <section id="contact" class="contact">
             <h2>Contact</h2>
-            <p>To inquire about availability or ask questions, please use the form below or reach out directly.</p>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+            <p>Please feel free to reach out with questions or to discuss whether this practice might be a good fit.</p>
+            <p>Email: <a href="mailto:your.email@example.com" style="color: var(--primary); text-decoration: none;">your.email@example.com</a><br>
                Phone: (123) 456-7890</p>
 
-            <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your form handler, e.g., Formspree, Netlify, etc. -->
+            <form action="https://formspree.io/f/your-form-id" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -185,7 +241,7 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <textarea id="message" name="message" rows="7" required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -193,9 +249,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Private Practice. All rights reserved.</p>
-        <p>Confidentiality and privacy are strictly maintained.</p>
+        <p>© 2025 Private Practice. All rights reserved.</p>
+        <p>All communications are confidential and protected.</p>
     </footer>
 
 </body>
-</
+</html>
