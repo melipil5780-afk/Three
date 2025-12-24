@@ -2,226 +2,227 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiential Psychodynamic Therapy | Depth-Oriented Private Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Depth-Oriented Experiential Therapy</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --depth-dark: #2C3639;      /* Deep, grounded charcoal-green */
-            --warm-earth: #A27B5C;      /* Warm, insightful brown/ochre */
-            --muted-gold: #DCD7C9;      /* Soft parchment for contrast */
-            --background: #F9F8F6;      /* Off-white, warm "paper" feel */
+            --depth-dark: #2C3333;      
+            --warm-earth: #A27B5C;      
+            --background: #FDFCFB;      
             --text-main: #3F4E4F;
-            --accent-soft: #8E9775;     /* Sage for growth */
+            --white: #FFFFFF;
+            --soft-border: #E5E1DE;
         }
 
-        * { box-sizing: border-box; }
+        /* Smooth scrolling for mobile */
+        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            line-height: 1.9;
+            line-height: 1.7;
             color: var(--text-main);
             background-color: var(--background);
-            font-size: 1.15rem;
+            -webkit-font-smoothing: antialiased;
         }
 
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 500;
-            color: var(--depth-dark);
-            line-height: 1.2;
-        }
-
-        /* Hero Section - The "Threshold" */
+        /* Mobile-First Header */
         header {
-            height: 90vh;
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 2rem;
-            background: linear-gradient(rgba(44, 54, 57, 0.4), rgba(44, 54, 57, 0.4)), 
-                        url('https://images.unsplash.com/photo-1502139214982-d0ad755818d8?auto=format&fit=crop&q=80&w=2070');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            position: relative;
+            background: linear-gradient(180deg, #3E4E50 0%, #2C3333 100%);
+            color: var(--white);
         }
 
         header h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            color: var(--muted-gold);
-            margin-bottom: 1.5rem;
-            max-width: 900px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.2rem, 8vw, 3.8rem);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            line-height: 1.1;
         }
 
         header p {
-            font-size: 1.4rem;
-            max-width: 700px;
-            font-style: italic;
             font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: clamp(1.2rem, 4vw, 1.6rem);
+            max-width: 500px;
             opacity: 0.9;
         }
 
-        /* The Journey/Content */
-        main {
-            max-width: 1000px;
-            margin: -100px auto 0; /* Pulls content over the hero slightly */
-            position: relative;
-            z-index: 10;
+        /* Floating action button feel for mobile scroll */
+        .scroll-hint {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            opacity: 0.5;
+            text-transform: uppercase;
         }
 
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Card-based layout for mobile clarity */
         section {
-            background: white;
-            padding: 5rem;
-            margin-bottom: 4rem;
-            border-radius: 4px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-            border-left: 4px solid var(--warm-earth);
+            background: var(--white);
+            padding: 2.5rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border: 1px solid var(--soft-border);
         }
 
         h2 {
-            font-size: 3rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--depth-dark);
             margin-top: 0;
-            border-bottom: 1px solid var(--muted-gold);
-            padding-bottom: 1rem;
-            display: inline-block;
-            margin-bottom: 2rem;
-        }
-
-        .highlight-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .highlight-list li {
-            padding: 1.5rem 0;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .highlight-list li::before {
-            content: "—";
-            margin-right: 1.5rem;
-            color: var(--warm-earth);
-            font-weight: bold;
-        }
-
-        /* Form Styling - The Invitation */
-        .contact-container {
-            background: var(--depth-dark);
-            color: var(--muted-gold);
-            padding: 6rem 4rem;
-            border-radius: 8px;
+            margin-bottom: 1.25rem;
             text-align: center;
         }
 
-        .contact-container h2 {
-            color: var(--muted-gold);
-            border-bottom-color: var(--warm-earth);
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
         }
 
-        form {
-            max-width: 600px;
-            margin: 4rem auto 0;
-            display: grid;
-            gap: 2rem;
+        /* Mobile-friendly list */
+        .insight-list {
+            padding: 0;
         }
+
+        .insight-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .dot {
+            min-width: 8px;
+            height: 8px;
+            background: var(--warm-earth);
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        /* High-conversion Contact Section */
+        .contact-box {
+            background: var(--depth-dark);
+            color: var(--white);
+            padding: 3rem 1.5rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+
+        .contact-box h2 { color: var(--white); }
 
         input, textarea {
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid var(--warm-earth);
-            padding: 1rem 0;
+            width: 100%;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 1.2rem;
+            margin-bottom: 1rem;
             color: white;
+            border-radius: 8px;
+            font-size: 16px; /* Prevents iOS zoom-on-focus */
             font-family: inherit;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-bottom-color: white;
+            box-sizing: border-box;
         }
 
         button {
+            width: 100%;
             background: var(--warm-earth);
             color: white;
-            padding: 1.5rem 3rem;
             border: none;
+            padding: 1.2rem;
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background 0.3s;
-            margin-top: 2rem;
-        }
-
-        button:hover {
-            background: #8b664a;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         footer {
             text-align: center;
-            padding: 6rem 2rem;
-            font-size: 0.9rem;
+            padding: 3rem 1rem;
+            font-size: 0.75rem;
             letter-spacing: 1px;
-            color: var(--text-main);
-            opacity: 0.7;
+            opacity: 0.6;
+            line-height: 2;
         }
 
-        @media (max-width: 768px) {
-            section { padding: 2.5rem; }
-            main { margin-top: 0; }
+        /* Desktop Adjustments */
+        @media (min-width: 768px) {
+            main { padding: 3rem 1rem; }
+            section { padding: 4rem; margin: 3rem 0; }
+            h2 { text-align: left; font-size: 2.8rem; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>To be known, is to begin.</h1>
-        <p>Experiential Psychodynamic Psychotherapy for those seeking a deeper connection to their own vitality.</p>
+        <h1>A Space to Breathe.</h1>
+        <p>Experiential, depth-oriented therapy for those ready to explore what lies beneath the surface.</p>
+        <div class="scroll-hint">Scroll to begin</div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>The Space Between</h2>
-            <p>This practice is not about "fixing" symptoms, but about understanding the architecture of your soul. We explore the <strong>psychodynamic layers</strong> of your life—the hidden patterns and silent echoes of the past—that influence your present peace.</p>
-            <p>Using a depth-oriented approach, we create a sanctuary where the authentic self can finally emerge from the noise of expectation.</p>
+        <section>
+            <h2>The Depth Approach</h2>
+            <p>True change happens when we stop simply "managing" our symptoms and start understanding where they come from. My approach focuses on the <strong>lived experience</strong>—the feelings and patterns that emerge in our sessions as we work together.</p>
+            <p>By exploring the connection between your history and your present-day emotions, we unlock a more authentic way of being in the world.</p>
         </section>
 
-        <section id="process">
-            <h2>The Path of Insight</h2>
-            <p>In our work together, we don't just talk about change; we experience it. You are invited to:</p>
-            <ul class="highlight-list">
-                <li><strong>Attune to the Moment:</strong> Discover what your body and emotions are telling you right now.</li>
-                <li><strong>Uncover the Shadows:</strong> Gently illuminate the relational patterns that no longer serve you.</li>
-                <li><strong>Lived Experience:</strong> Moving beyond "intellectualizing" into the raw, transformative power of felt-insight.</li>
-            </ul>
+        <section>
+            <h2>In Our Sessions</h2>
+            <div class="insight-list">
+                <div class="insight-item">
+                    <div class="dot"></div>
+                    <div><strong>Emotional Insight:</strong> We go beyond intellectual talk to feel and process experiences as they happen.</div>
+                </div>
+                <div class="insight-item">
+                    <div class="dot"></div>
+                    <div><strong>Relational Patterns:</strong> We illuminate how you connect with others and how those patterns shape your life.</div>
+                </div>
+                <div class="insight-item">
+                    <div class="dot"></div>
+                    <div><strong>Authentic Vitality:</strong> We work toward a sense of inner freedom and emotional energy.</div>
+                </div>
+            </div>
         </section>
 
-        <section class="contact-container">
-            <h2>Begin the Conversation</h2>
-            <p>If you feel a pull toward this depth, I invite you to reach out. Every journey begins with a single, confidential inquiry.</p>
-            
-            <form action="#" method="POST">
+        <div class="contact-box" id="connect">
+            <h2>Begin Your Inquiry</h2>
+            <p style="text-align: center; opacity: 0.8; margin-bottom: 2rem;">Confidentiality is the cornerstone of our work. Reach out below to start the conversation.</p>
+            <form>
                 <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email Address" required>
-                <textarea rows="4" placeholder="What is calling for your attention lately?" required></textarea>
-                <button type="submit">Step Into the Work</button>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="What brings you to therapy at this time?" required></textarea>
+                <button type="submit">Send Confidential Message</button>
             </form>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p>© 2025 DEPTH-ORIENTED PRIVATE PRACTICE</p>
-        <p>STRICTLY CONFIDENTIAL • THERAPEUTIC SANCTUARY</p>
+        © 2025 PRIVATE PRACTICE<br>
+        DEPTH-ORIENTED THERAPEUTIC SERVICES<br>
+        ALL COMMUNICATIONS ARE ENCRYPTED & PROTECTED
     </footer>
 
 </body>
